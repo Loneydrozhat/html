@@ -279,36 +279,25 @@ $news_content .= '
         <div class="Border_3">
             <div class="BoxContent" style="background-image:url('.$layout_name.'/images/content/scroll.gif);">
 	<table bgcolor='.$config['site']['darkborder'].' border=0 cellpadding=1 cellspacing=1 width=100%>
-    <tr bgcolor='. $config['site']['vdarkborder'] .'><td align="center" class=white colspan=1><b>Bem-vindo ao '.$config['server']['serverName'].' Global</b></td></tr>
+    <tr bgcolor='. $config['site']['vdarkborder'] .'><td align="center" class=white colspan=1><b>Bem-vindo ao '.$config['server']['serverName'].' </b></td></tr>
     <tr><td><table border=0 cellpadding=1 cellspacing=1 width=100%>
  
-    <tr bgcolor='. $config['site']['lightborder'] .'><td><center><b>IP:</b> magestibia.servegame.com </center></td>
-    <td><center><b>Version:</b> 10.98</center></td><td><center><b>Porta:</b> 7171</center></td></tr>      
+    <tr bgcolor='. $config['site']['lightborder'] .'><td><center><b>IP:</b> baiaklixo.tk </center></td>
+    <td><center><b>Versão:</b> 10.98</center></td><td><center><b>Porta:</b> 7171</center></td></tr>     
     <table border=0 cellpadding=1 cellspacing=1 width=100%>
-    <tr bgcolor='. $config['site']['lightborder'] .'><td><center><b>Novo Player Criado</b>: <a href="?subtopic=characters&name='.urlencode($query2['name']).'">'.$query2['name'].'</a>, player number '.$query2['id'].'. Bem-vindo e tenha um bom jogo!</center></td></tr>
+        <tr bgcolor='. $config['site']['vdarkborder'] .'><td align="center" class=white colspan=1><b>Estatísticas do banco de dados:</b></td></tr>
+    <tr><td><table border=0 cellpadding=1 cellspacing=1 width=100%>
+    <tr bgcolor='. $config['site']['lightborder'] .'><td><center><b>Último jogador criado</b>: <a href="?subtopic=characters&name='.urlencode($query2['name']).'">'.$query2['name'].'</a>, número '.$query2['id'].'. Seja bem-vindo e tenha um bom jogo!</center></td></tr>
     <table border=0 cellpadding=0 cellspacing=1 width=100%>
-    <tr bgcolor='. $config['site']['lightborder'] .'><td><center><b>Casas Vazias:</b> '.$housesfree[0].'</center></td>
-    <td><center><b>Casas Alugadas:</b> '.$housesrented[0].'</center></td></tr>      
-    <tr bgcolor='. $config['site']['lightborder'] .'><td><center><b>Accounts Criadas</b>: '.$accounts[0].'</center></td>
-    <td><center><b>Players Criados</b>: '.$players[0].'</center></td></tr>
-    <tr bgcolor='. $config['site']['lightborder'] .'><td><center><b>Contas Banidas</b>: '.$banned[0].'</center></td>
-    <td><center><b>Guilds Fundadas</b>: '.$guilds[0].'</center></td></tr>
-    </table></td></tr></table></table>
+    <tr bgcolor='. $config['site']['lightborder'] .'><td><center><b>Casas vazias:</b> '.$housesfree[0].'</center></td>
+    <td><center><b>Casas alugadas:</b> '.$housesrented[0].'</center></td></tr>      
+    <tr bgcolor='. $config['site']['lightborder'] .'><td><center><b>Contas criadas</b>: '.$accounts[0].'</center></td>
+    <td><center><b>Jogadores criados</b>: '.$players[0].'</center></td></tr>
+    <tr bgcolor='. $config['site']['lightborder'] .'><td><center><b>Contas banidas</b>: '.$banned[0].'</center></td>
+    <td><center><b>Guilds criadas</b>: '.$guilds[0].'</center></td></tr>
+   </table></td></tr></table></table>
 				</br></br>
-				<table border="0" align="center" width=100%">
-						<tr>
-							<td><p align="center"><img src="http://i.imgur.com/323oQjP.jpg" border="0"></p></td>
-							<td><p align="center"><img src="http://i.imgur.com/2faKDeC.jpg" border="0"></p></td>
-							<td><p align="center"><img src="http://i.imgur.com/lxTvrnv.jpg" border="0"></p></td>
-							<td><p align="center"><img src="http://i.imgur.com/nYJ0cbK.jpg" border="0"></p></td>
-						</tr>
-						<tr>
-							<td><p align="center"><a href="/index.php?subtopic=serverinfo">[CLIQUE AQUI]</a></p></td>
-							<td><p align="center"><a href="http://www.tibiawiki.com.br/wiki/Quests" target="_blank">[CLIQUE AQUI]</a></p></td>
-							<td><p align="center"><a href="#">[CLIQUE AQUI]</a></p></td>
-							<td><p align="center"><a href="/index.php?subtopic=downloads">[CLIQUE AQUI]</a></p></td>
-						</tr>
-</table>
+				
 				</div>
 				</div>
             </div>
@@ -549,4 +538,4 @@ if($group_id_of_acc_logged >= $config['site']['access_admin_panel'] && $action !
 		}
     }
     else
-        $main_content .= '<h3>No news. Go forum and make new thread on board News.</h3>';
+        $main_content .= '<h3 style=" padding-left:10px">	Nenhuma noticia.</h3>';
