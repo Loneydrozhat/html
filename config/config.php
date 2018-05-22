@@ -1,6 +1,6 @@
 <?PHP
 # Account Maker Config
-$config['site']['serverPath'] = "C:/Users/rickarof/Desktop/baiaklixo/";
+$config['site']['serverPath'] = "C:/Users/rickarof/Desktop/magestibia-master/";
 $config['site']['useServerConfigCache'] = false;
 $towns_list = array(1 => 'Main');
 
